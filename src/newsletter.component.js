@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
+import Container from "react-bootstrap/Container";
 
 // a basic form
 const CustomForm = ({ status, message, onValidated }) => {
@@ -12,7 +13,7 @@ const CustomForm = ({ status, message, onValidated }) => {
     });
 
   return (
-    <div
+    <Container
       style={{
         background: "#efefef",
         borderRadius: 2,
@@ -33,7 +34,7 @@ const CustomForm = ({ status, message, onValidated }) => {
       <br />
       <input
         style={{
-          fontSize: "200%",
+          fontSize: "120%",
           padding: 5,
           marginBottom: 3,
           fontFamily: "Courier New",
@@ -42,6 +43,7 @@ const CustomForm = ({ status, message, onValidated }) => {
         type="email"
         placeholder="Deine email"
       />
+
       <br />
       <button
         style={{
@@ -54,7 +56,7 @@ const CustomForm = ({ status, message, onValidated }) => {
       >
         Anmelden
       </button>
-    </div>
+    </Container>
   );
 };
 
@@ -63,7 +65,7 @@ export default function NewsletterComponent() {
   const url =
     "https://jster.us7.list-manage.com/subscribe/post?u=ed40c0084a0c5ba31b3365d65&id=ec6f32bf5e";
   return (
-    <div>
+    <Container>
       {isEmailDone ? (
         <div
           style={{
@@ -108,6 +110,6 @@ export default function NewsletterComponent() {
           />
         </div>
       )}
-    </div>
+    </Container>
   );
 }

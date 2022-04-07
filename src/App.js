@@ -47,7 +47,7 @@ function App() {
       <Navbar>
         <Container>
           <Navbar.Brand href="#home">Kian</Navbar.Brand>
-          <div>
+          <div style={{ alignSelf: "flex-end", marginTop: -5 }}>
             <SocialIcon
               style={{ margin: 3 }}
               url="https://www.instagram.com/kian_d/"
