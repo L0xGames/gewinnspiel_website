@@ -13,7 +13,9 @@ function App() {
   const time_url = "https://worldtimeapi.org/api/timezone/Europe/Berlin";
 
   //SETUP
-  const date1 = Math.floor(new Date("April 6, 2022 22:34:00").getTime() / 1000);
+  const date1 = Math.floor(
+    new Date("April 17, 2022 22:34:00").getTime() / 1000
+  );
   const solution = "5";
 
   useEffect(() => {
