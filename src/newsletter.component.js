@@ -85,7 +85,7 @@ export default function NewsletterComponent() {
           style={{ borderStyle: "solid", padding: 10, background: "#efefef" }}
         >
           <button
-            style={{ marginLeft: 450, borderStyle: "none" }}
+            style={{ borderStyle: "none", marginBottom: 10 }}
             onClick={() => setEmailDone(true)}
           >
             X
