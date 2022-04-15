@@ -14,7 +14,7 @@ function App() {
 
   //SETUP
   const date1 = Math.floor(
-    new Date("April 1, 2022 22:34:00").getTime() / 1000
+    new Date("April 18, 2022 13:34:00").getTime() / 1000
   );
   const solution = "5";
 
